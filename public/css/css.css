@@ -1,0 +1,559 @@
+@font-face {
+    font-family: 'Mojito Web';
+    src: url('fonts/MojitoWeb.ttf');}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-Regular.eot');
+    src: local('Geometria Regular'), local('Geometria-Regular'),
+    url('fonts/Geometria-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-Regular.woff2') format('woff2'),
+    url('fonts/Geometria-Regular.woff') format('woff'),
+    url('fonts/Geometria-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-Italic.eot');
+    src: local('Geometria Italic'), local('Geometria-Italic'),
+    url('fonts/Geometria-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-Italic.woff2') format('woff2'),
+    url('fonts/Geometria-Italic.woff') format('woff'),
+    url('fonts/Geometria-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-ExtraBoldItalic.eot');
+    src: local('Geometria ExtraBold Italic'), local('Geometria-ExtraBoldItalic'),
+    url('fonts/Geometria-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-ExtraBoldItalic.woff2') format('woff2'),
+    url('fonts/Geometria-ExtraBoldItalic.woff') format('woff'),
+    url('fonts/Geometria-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-ExtraLightItalic.eot');
+    src: local('Geometria ExtraLight Italic'), local('Geometria-ExtraLightItalic'),
+    url('fonts/Geometria-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-ExtraLightItalic.woff2') format('woff2'),
+    url('fonts/Geometria-ExtraLightItalic.woff') format('woff'),
+    url('fonts/Geometria-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-Medium.eot');
+    src: local('Geometria Medium'), local('Geometria-Medium'),
+    url('fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-Medium.woff2') format('woff2'),
+    url('fonts/Geometria-Medium.woff') format('woff'),
+    url('fonts/Geometria-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-Light.eot');
+    src: local('Geometria Light'), local('Geometria-Light'),
+    url('fonts/Geometria-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-Light.woff2') format('woff2'),
+    url('fonts/Geometria-Light.woff') format('woff'),
+    url('fonts/Geometria-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-HeavyItalic.eot');
+    src: local('Geometria Heavy Italic'), local('Geometria-HeavyItalic'),
+    url('fonts/Geometria-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-HeavyItalic.woff2') format('woff2'),
+    url('fonts/Geometria-HeavyItalic.woff') format('woff'),
+    url('fonts/Geometria-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-BoldItalic.eot');
+    src: local('Geometria Bold Italic'), local('Geometria-BoldItalic'),
+    url('fonts/Geometria-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-BoldItalic.woff2') format('woff2'),
+    url('fonts/Geometria-BoldItalic.woff') format('woff'),
+    url('fonts/Geometria-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-Bold.eot');
+    src: local('fonts/Geometria Bold'), local('Geometria-Bold'),
+    url('fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-Bold.woff2') format('woff2'),
+    url('fonts/Geometria-Bold.woff') format('woff'),
+    url('fonts/Geometria-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-LightItalic.eot');
+    src: local('Geometria Light Italic'), local('Geometria-LightItalic'),
+    url('fonts/Geometria-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-LightItalic.woff2') format('woff2'),
+    url('fonts/Geometria-LightItalic.woff') format('woff'),
+    url('fonts/Geometria-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-ExtraBold.eot');
+    src: local('Geometria ExtraBold'), local('Geometria-ExtraBold'),
+    url('fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-ExtraBold.woff2') format('woff2'),
+    url('fonts/Geometria-ExtraBold.woff') format('woff'),
+    url('fonts/Geometria-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-MediumItalic.eot');
+    src: local('Geometria Medium Italic'), local('Geometria-MediumItalic'),
+    url('fonts/Geometria-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-MediumItalic.woff2') format('woff2'),
+    url('fonts/Geometria-MediumItalic.woff') format('woff'),
+    url('fonts/Geometria-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-ExtraLight.eot');
+    src: local('Geometria ExtraLight'), local('Geometria-ExtraLight'),
+    url('fonts/Geometria-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-ExtraLight.woff2') format('woff2'),
+    url('fonts/Geometria-ExtraLight.woff') format('woff'),
+    url('fonts/Geometria-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-Heavy.eot');
+    src: local('Geometria Heavy'), local('Geometria-Heavy'),
+    url('fonts/Geometria-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-Heavy.woff2') format('woff2'),
+    url('fonts/Geometria-Heavy.woff') format('woff'),
+    url('fonts/Geometria-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-ThinItalic.eot');
+    src: local('Geometria Thin Italic'), local('Geometria-ThinItalic'),
+    url('fonts/Geometria-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-ThinItalic.woff2') format('woff2'),
+    url('fonts/Geometria-ThinItalic.woff') format('woff'),
+    url('fonts/Geometria-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;}
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/Geometria-Thin.eot');
+    src: local('Geometria Thin'), local('Geometria-Thin'),
+    url('fonts/Geometria-Thin.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometria-Thin.woff2') format('woff2'),
+    url('fonts/Geometria-Thin.woff') format('woff'),
+    url('fonts/Geometria-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;}
+
+body{
+    margin: 0;
+    box-sizing: inherit;
+    background-color: #F1F1F2;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.container-md{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+/*Стиль HEADER*/
+.navigation{
+    display: flex;
+    justify-content: center;
+    min-height: 96px;
+    max-height: 96px;
+    min-width: 100%;
+    max-width: 100%;
+    position: fixed;
+    z-index: 3;
+    transition: transform 0.3s;
+    user-select: none;
+}
+.navigation::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top center;
+    background: #ffffff;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+.navigation:hover::after{
+    transform: scaleY(1);
+}
+.navigation:hover a{
+    color: black;
+    transition: color 0.3s;
+}
+.navigation:hover .legend-slogan-text{
+    color: black;
+    transition: color 0.3s;
+}
+.legend-slogan{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+}
+.menu_btn_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 1300px;
+}
+.project_btn, .configurate_btn, .aboutUs_btn, .logo-btn{
+    width: 170px;
+}
+.shoppingCart_btn{
+    min-width: 200px;
+    cursor: pointer;
+}
+.sub_menu{
+    margin-top: 36px;
+}
+.hide{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    background: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    cursor: pointer;
+}
+.show{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 184.84px;
+    background: white;
+    opacity: 1;
+    transition: all 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+}
+.slide-btn_1{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    min-height: 50px;
+    color: black;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    text-transform: none;
+}
+.slide-btn_2{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    min-height: 50px;
+    color: black;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    text-transform: none;
+}
+.slide-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    min-height: 50px;
+    color: black;
+    font-size: 17px;
+    text-transform: none;
+}
+.navigation:hover .project_btn:hover{
+    color: #498aec;
+}
+.navigation:hover .configurate_btn:hover{
+    color: #498aec;
+}
+.navigation:hover .aboutUs_btn:hover{
+    color: #498aec;
+}
+.navigation:hover .legend-slogan-text:hover{
+    color: #498aec;
+}
+.navigation:hover .shoppingCart_btn:hover{
+    color: #498aec;
+}
+.navigation:hover .slide-btn_1:hover{
+    color: #498aec;
+}
+.navigation:hover .slide-btn_2:hover{
+    color: #498aec;
+}
+.navigation:hover .slide-btn:hover{
+    color: #498aec;
+}
+.logo-btn{
+    line-height: 0;
+}
+/*Конец стилей HEADER*/
+
+/*Стиль главной страницы*/
+.c-hero-full-height{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+.c-hero_video video{
+    height: 100vh;
+    left: 49.9%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    z-index: 0;
+}
+.scroll-down{
+    bottom: 2rem;
+    left: calc(50% - 1rem);
+    outline: none;
+    position: absolute;
+    opacity: 10%;
+    transition: opacity .5s;
+    width: 2rem;
+    z-index: 1;
+    background: transparent;
+    border: none;
+}
+.scroll-down:hover{
+    opacity: 100%;
+    transition: opacity .5s;
+}
+.c-hero_container{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.c-hero_container-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    margin: 10px;
+    font-family: 'Geometria';
+    font-weight: 300;
+}
+.buy-btn, .more_info-btn {
+    min-width: 110px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 11px 10px 10px 10px;
+    transition: background .9s, color 1s, font-weight 1s;
+}
+.buy-btn:hover, .more_info-btn:hover{
+    color: #498aec;
+    background: white;
+    font-weight: bold;
+}
+
+.buy-btn_configurator {
+    min-width: 100px;
+    background-color: white;
+    color: #474a51;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    transition: all .5s;
+    border: 2px solid #474a51;
+    border-radius: 10px;
+    font-family: 'Geometria';
+    font-weight: 800;
+}
+.buy-btn_configurator:hover{
+    background-color: #474a51;
+    color: white;
+}
+
+.main-block_firs-section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 800px;
+    background-image: url("/../img/maket_1_1.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    padding-top: 140px;
+}
+
+.main-block_firs-section-text{
+    z-index: -1;
+    margin-left: -550px;
+    width: 400px;
+    height: 160px;
+    background-color: #DEDEDE;
+    padding: 50px;
+}
+
+.main-block_firs-section-heading_text {
+    font-family: 'Geometria';
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.main-block_firs-section-main_text {
+    font-family: 'Geometria';
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.main-block_second-section{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 900px;
+    background-image: url("/../img/maket_2.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    margin-top: 100px;
+}
+
+.main-block_second-section-text{
+    z-index: -1;
+    margin-right: 20px;
+    width: 400px;
+    height: 160px;
+    background-color: #DEDEDE;
+    padding: 50px;
+}
+
+.main-block_second-section-heading_text{
+    font-family: 'Geometria';
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.main-block_second-section-main_text{
+    font-family: 'Geometria';
+    font-weight: 300;
+    font-size: 19px;
+}
+/*Конец стилей главной страницы*/
+
+/*Стиль для шаблонов default*/
+.o-main{
+    max-width: 100%;
+    overflow: hidden;
+}
+.c-section-info{
+    display: flex;
+    align-items: center;
+}
+.c-hero{
+    min-height: 400px;
+    overflow: hidden;
+}
+.c-hero_image{
+    position: absolute;
+    background-blend-mode: darken;
+    overflow: hidden;
+    object-fit: cover;
+    min-width: 100%;
+    transform: translateY(-50%);
+    filter: brightness(50%);
+}
+.name_page-style {
+    position: relative;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    font-family: 'Geometria';
+    font-weight: 600;
+    color: white;
+    font-size: 45px;
+    filter: brightness(90%);
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.o-media-wrapper{
+    width: 100%;
+    object-fit: cover;
+    height: 800px;
+    display: block;
+    overflow: hidden;
+}
+/*Конец стилей для шаблонов default*/
+
+/*Отдельные стили для шаблонов*/
+.o-media-wrapper-project{
+    width: 100%;
+    background: url("../img/Project.jpg") no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: block;
+    overflow: hidden;
+}
+
+/*Конец отдельных стилей для шаблонов*/
+
+.footer-style {
+    font-family: 'Geometria';
+    font-weight: 400;
+    background-color: #DEDEDE;
+    padding: 20px 100px;
+    margin-top: 20px;
+}

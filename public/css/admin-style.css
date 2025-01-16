@@ -1,0 +1,73 @@
+.footer-style{
+    display: none;
+}
+.show{
+    background-color: transparent !important;
+}
+.sub_menu {
+    margin-top: 33px !important;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.admin-main-content{
+    min-height: 100vh;
+    padding: 30px 0;
+}
+.admin-functional-block{
+    gap: 40px;
+}
+.admin-action-content{
+    column-gap: 132px;
+    row-gap: 50px;
+}
+
+/* Управление заказами */
+
+.position-name{
+    display: block;
+    font-family: 'Geometria';
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.position-items{
+    display: block;
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 14px;
+}
+.position-cpu span, .position-motherboard span, .position-ram span, .position-gpu span, .position-psu span, .position-disk span, .position-ssd span{
+    padding: 0 10px;
+}
+.position-cpu, .position-motherboard, .position-ram, .position-gpu, .position-psu, .position-disk, .position-ssd{
+    padding: 3px 0;
+    font-style: italic;
+}
+.position-price{
+    display: block;
+    font-family: 'Geometria';
+    font-size: 15px;
+    font-weight: 500;
+}
+
+details{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+details > summary {
+    list-style-type: none;
+}
+summary:before {
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+    margin: -5px 5px 0 0;
+}
+details[open] summary:before {
+    content: "-";
+}
+
+/**/

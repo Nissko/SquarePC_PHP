@@ -1,0 +1,217 @@
+/*Стили личного кабинета*/
+.account-page-main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 62px;
+    margin-bottom: 42px;
+}
+
+.account-page-left_menu {
+    background: white;
+    min-width: 440px;
+    max-width: 440px;
+    height: 100%;
+    max-height: 432px;
+    padding: 20px;
+    border-radius: 30px;
+    margin-right: 40px;
+    box-shadow: -15px 15px 20px -10px rgb(34 60 80 / 60%);
+}
+.account-page-left_menu-avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.account-page-avatar_photo{
+    width: 120px;
+    height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 100px;
+    user-select: none;
+    pointer-events: none;
+    object-fit: cover;
+}
+.account-page-avatar_name-user{
+    font-family: 'Geometria';
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    user-select: none;
+}
+.account-page-total_sum_orders{
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 20px;
+}
+.account-page-total_count_orders{
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 20px;
+}
+.account-page-button_show_orders-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: whitesmoke;
+    color: black;
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 17px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 0.5rem;
+    user-select: none;
+}
+.account-page-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.account-page-style_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: whitesmoke;
+    color: black;
+    font-family: 'Geometria';
+    font-weight: 400;
+    min-width: 100px;
+    font-size: 17px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    user-select: none;
+}
+.account-page-style_buttons:hover, .account-page-button_show_orders-style:hover{
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+
+.account-page-right_menu{
+    background: white;
+    padding: 20px;
+    min-width: 920px;
+    max-width: 920px;
+    height: 432px;
+    border-radius: 30px;
+    box-shadow: -15px 15px 20px -10px rgb(34 60 80 / 60%);
+    margin-bottom: 15px;
+}
+.account-page-right_menu-title_blocks {
+    font-family: 'Geometria';
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+}
+.account-page-right_menu-info{
+    display: inline-block;
+    text-align: justify;
+    font-family: 'Geometria';
+    font-size: 18px;
+}
+.info-text{
+    text-indent: 35px;
+}
+.account-page-right_menu-show_orders_block{
+    background: whitesmoke;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    border-radius: 20px;
+    font-family: 'Geometria';
+    padding: 15px;
+}
+/*Конец стилей личного кабинета*/
+
+/*Стиль формы изменения фото*/
+.account-file {
+    position: relative;
+    display: inline-block;
+}
+.account-file-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #419152;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+.account-file-text {
+    padding: 0 10px;
+    line-height: 40px;
+    display: inline-block;
+}
+.account-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+/* Focus */
+.account-file input[type=file]:focus + .account-file-btn {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover/active */
+.account-file:hover .account-file-btn {
+    background-color: #59be6e;
+}
+.account-file:active .account-file-btn {
+    background-color: #2E703A;
+}
+
+/* Disabled */
+.account-file input[type=file]:disabled + .account-file-btn {
+    background-color: #eee;
+}
+
+.account-file-btn-sub{
+    margin: 15px 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #0675f3;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    transition: background-color 0.2s;
+    font-family: 'Geometria';
+    width: 150px;
+}
+
+.account-file-btn-sub:hover {
+    background-color: #1c8dde;
+}
+/* === */
+
+

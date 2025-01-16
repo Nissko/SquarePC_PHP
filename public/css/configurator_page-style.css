@@ -1,0 +1,402 @@
+/* Стили configuration_page*/
+.style_error_configurator_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: red;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.configurator_page-flex-block {
+    margin-top: -25px;
+    min-height: 600px;
+    background-image: url("/../img/ConfigurationPageBG.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.configurator_page-flex-block-row-1{
+    display: flex;
+    justify-content: space-between;
+    min-height: 240px;
+}
+
+.configurator_page-flex-block-row-2{
+    display: flex;
+    justify-content: space-between;
+    min-height: 215px;
+}
+
+.configurator_page-flex-block-2{
+    display: flex;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.configurator_page-flex-block2-row-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.configurator_page-flex-block-3{
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.cpu-select-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.ram-select-div{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.gpu-select-div{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.motherboard-select-div{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.block-count-ram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.block-psu{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.block-hard-drive{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.block-solide-drive{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.configurator_page-submit_buttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Geometria';
+    z-index: 1;
+    background: transparent;
+    min-height: 200px;
+}
+
+.configurator_page-price_div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    color: #474a51;
+    border-left: 3px solid #474a51;
+}
+
+.configurator_page-price_input, .configurator_page-build_name_input{
+    display: none;
+}
+
+.configurator_page-price_span_text_price{
+    padding-right: 5px;
+}
+
+.configurator_page-price_span_text_currency{
+    padding-left: 2px;
+}
+
+.select-name-div{
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+select.cpu-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 25;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 285px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+}
+
+select.ram-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 30;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 290px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+}
+
+select.gpu-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 30;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 290px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+}
+
+select.motherboard-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 30;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 290px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+}
+
+select.count-ram-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 25;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 50px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+    text-align: center;
+}
+
+select.psu-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 25;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 290px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+}
+
+select.hard-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 25;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 290px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+}
+
+select.solide-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 25;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 290px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+}
+
+.cooling-select-select{
+    border: .5px solid #F1F1F2;
+    background-color: #F1F1F2;
+    color: #474a51;
+    z-index: 25;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    width: 290px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Удаление стрелочки сбоку */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    transition: all .9s;
+    -webkit-transition:all .9s;
+    -moz-transition:all .9s;
+}
+
+.abc {
+    border: 5px solid #474a51;
+    color: #474a51;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+}
+
+.abc::after,
+.abc::before {
+    content: "";
+    display: block;
+    border: 5px solid #F1F1F2;
+    z-index: 20;
+    position: absolute;
+}
+
+.abc::after {
+    left: -5px;
+    top: 10px;
+    right: -5px;
+    bottom: 10px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.abc::before {
+    left: 10px;
+    top: -5px;
+    right: 10px;
+    bottom: -5px;
+    border-left: none;
+    border-right: none;
+}
+
+/* Конец стилей configuration_page */

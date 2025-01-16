@@ -1,0 +1,243 @@
+/*Отдельные стили configurators*/
+.content-legend {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Geometria';
+    font-size: 28px;
+    font-weight: 600;
+}
+.link-to-configurator{
+    color: black;
+}
+.conf-img-block{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
+}
+.conf-img{
+    width: 150%;
+    height: 150%;
+    transition: 0.5s;
+}
+.conf_name-conf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    height: 50px;
+    font-family: 'Geometria';
+}
+.conf_desc-conf{
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    max-height: 120px;
+    text-align:center;
+    padding: 5px;
+    font-family: 'Geometria Light', sans-serif;
+}
+.conf-flex-block{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.conf-block {
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 5px;
+    padding: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+/*Конец отдельных стилей configurators*/
+
+
+/* Стили для Computers_Assemblies */
+.conf-assemblies{
+    height: 720px;
+}
+.conf_desk-assemblies {
+    font-family: 'Geometria';
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 17px;
+}
+.conf_desk-assemblies_img{
+    height: 100%;
+    max-height: 23px;
+    padding: 0 10px;
+}
+.component_pc{
+    display: none;
+}
+.conf_desk-assemblies a{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Geometria';
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: 0;
+    height: 100%;
+    max-height: 30px !important;
+    box-shadow: 0 0 0 0 !important;
+}
+.popup_heading{
+    display: flex;
+    font-family: 'Geometria';
+    font-size: 21px;
+    font-weight: 600;
+    cursor: default;
+}
+.popup_text{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Geometria';
+    font-weight: 400;
+    cursor: default;
+    height: 385px;
+    box-sizing: border-box;
+}
+.popup_text div{
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+.popup_text div:first-child{
+    border-top: 1px solid black;
+}
+.conf_price {
+    font-family: 'Geometria';
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.skill{
+    padding-bottom: 15px;
+}
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Geometria';
+    margin: 10px 0;
+    padding-bottom: 25px;
+}
+.skill-bar {
+    height: 14px;
+    background: #dbdbdb;
+    border-radius: 10px;
+}
+.skill-per {
+    height: 14px;
+    background: #498aec;
+    border-radius: 10px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    font-family: 'Geometria';
+    background: #498aec;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #498aec;
+    top: -14px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 1px;
+}
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+.btn-assemblies{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 10px;
+}
+.in_cart_btn{
+    border: 1.5px solid #498aec !important;
+    color: #498aec !important;
+}
+.in_cart_btn:hover{
+    background-color: #498aec;
+    color: white !important;
+}
+.buy_assemblies {
+    display: flex;
+    font-family: 'Geometria';
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    height: 28px;
+    transition: all .3s ease-in-out;
+    background: none;
+    border: 1.5px solid forestgreen;
+    border-radius: 10px;
+    color: forestgreen;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.buy_assemblies-danger{
+    border: 1.5px solid red;
+    color: red;
+}
+.buy_assemblies-danger:hover{
+    background-color: red;
+    color: white;
+}
+.configurate_assemblies {
+    display: flex;
+    text-transform: uppercase;
+    width: 100%;
+    height: 28px;
+    font-family: 'Geometria';
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    background: none;
+    border: 1.5px solid coral;
+    border-radius: 10px;
+    color: coral;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+/* Конец стилей Computers_Assemblies */

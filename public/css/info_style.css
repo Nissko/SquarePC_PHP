@@ -1,0 +1,133 @@
+.m-b-50{
+    margin-bottom: 50px !important;
+}
+
+.header-div{
+    font-size: 36px;
+    font-family: 'Geometria';
+    font-weight: 500;
+    margin: 50px 100px;
+    user-select: none;
+}
+.info-bg-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url("../img/photo_content/pc_bg.jpg") no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.info-bg-block:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .4);
+}
+.header-block__about-us{
+    color: white;
+    font-size: 60px;
+    font-family: 'Geometria';
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 2;
+    user-select: none;
+}
+.square-info {
+    z-index: 2;
+    padding: 10px 20px;
+    user-select: none;
+}
+.info-title{
+    font-size: 48px;
+    font-weight: 700;
+}
+.info-subtitle{
+    border: 2px solid white;
+    width: fit-content;
+    padding: 5px 25px;
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+.info-text_under-subtitle{
+    font-size: 18px;
+    padding: 8px 0;
+}
+.header-block__about-us__information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 30px;
+    border-top: 2px solid;
+    z-index: 2;
+}
+.content-info_contact{
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.info-block_contacts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: default;
+}
+.info-block_contacts__style{
+    padding: 20px;
+    user-select: none;
+}
+.avatar-ico{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+.avatar-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+}
+.avatar-name{
+    text-align: center;
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.avatar-position {
+    text-align: center;
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 16px;
+    border-top: 0.5px solid;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-about_us-company__style-text{
+    display: flex;
+    margin: 0 100px;
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 20px;
+    text-indent: 50px;
+    line-height: 35px;
+    cursor: default;
+    user-select: none;
+}

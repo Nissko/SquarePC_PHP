@@ -1,0 +1,81 @@
+.account-page-right_menu-info{
+    width: 100%;
+}
+.user-order-div{
+    cursor: default;
+    overflow-y: auto;
+    max-height: 370px;
+}
+.user-order-div summary{
+    user-select: none;
+    cursor: pointer;
+}
+.order-name{
+    display: block;
+    font-family: 'Geometria';
+    font-size: 20px;
+    font-weight: 800;
+}
+.order-status{
+    display: block;
+    font-family: 'Geometria';
+    font-size: 18px;
+    font-weight: 400;
+}
+.order-price{
+    display: block;
+    font-family: 'Geometria';
+    font-size: 18px;
+    font-weight: 400;
+}
+.order_check{
+    cursor: pointer;
+    display: block;
+    font-family: 'Geometria';
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    border: 1px solid #0b5ed7;
+    background-color: #0b5ed7;
+    padding: 5px 10px;
+    margin: 5px 0;
+    color: whitesmoke;
+}
+.position-name{
+    display: block;
+    font-family: 'Geometria';
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.position-items{
+    display: block;
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 19px;
+}
+.position-cpu span, .position-motherboard span, .position-ram span, .position-gpu span, .position-psu span, .position-disk span, .position-ssd span{
+    padding: 0 10px;
+}
+.position-cpu, .position-motherboard, .position-ram, .position-gpu, .position-psu, .position-disk, .position-ssd{
+    padding: 3px 0;
+    font-style: italic;
+}
+.position-price{
+    display: block;
+    font-family: 'Geometria';
+    font-size: 20px;
+    font-weight: 500;
+}
+details > summary {
+    list-style-type: none;
+}
+summary:before {
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+    margin: -5px 5px 0 0;
+}
+details[open] summary:before {
+    content: "-";
+}
